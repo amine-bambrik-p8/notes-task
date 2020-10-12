@@ -1,0 +1,25 @@
+{
+  "name": "notes-task",
+  "version": "1.0.0",
+  "description": "Polsource backend task",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amine-bambrik-p8/notes-task.git"
+  },
+  "author": "Amine BAMBRIK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amine-bambrik-p8/notes-task/issues"
+  },
+  "homepage": "https://github.com/amine-bambrik-p8/notes-task#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0"
+  }
+}
