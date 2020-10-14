@@ -12,6 +12,6 @@ COPY --chown=node:node package-lock.json package.json ./
 
 RUN npm ci
 
-COPY --chown=node:node . .
+COPY --chown=node:node ./app .
 
-CMD ["nodemon", "index.js"]
+CMD ["nodemon", "app.js"]

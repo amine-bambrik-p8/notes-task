@@ -4,7 +4,8 @@
   "description": "Polsource backend task",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/amine-bambrik-p8/notes-task#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "helmet": "^4.1.1",
     "mongoose": "^5.10.9",

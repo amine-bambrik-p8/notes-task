@@ -6,7 +6,7 @@ const router = Router({
 });
 router.get('/',readAll);
 router.get('/:id',readOne);
-router.post('/:id',createOne);
+router.post('/',createOne);
 router.put('/:id',updateOne);
 router.delete('/:id',deleteOne);
 module.exports =  router;

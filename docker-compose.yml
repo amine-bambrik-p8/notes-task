@@ -1,16 +1,17 @@
 version: "3"
 services:
   web:
-    build: dev.Dockerfile
+    build: .
     ports:
-      - "3000:8080"
+      - "8080:8080"
     volumes:
-      - .:/home/node/code
+      - ./app:/home/node/code
       - /home/node/code/node_modules
     links:
       - db
     environment:
-      MONGO_CONNECTION_STRING: mongodb://db:27017
+      MONGO_CONNECTION_STRING: mongodb://db:27017/
+      NODE_ENV: development
       PORT: 8080
   db:
     image: mongo:3
